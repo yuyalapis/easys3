@@ -56,7 +56,12 @@ us-gov-west-1
 
 ### Putting a file to s3
 ```ruby
-Easys3.put(bucket_name, file_name, file, acl)
+Easys3.put(bucket_name, file_name, file, acl) # acl is optional
+```
+
+#### example
+```ruby
+Easys3.put("test-bucket", "test/abc.log", "abbc") # acl is optional
 ```
 
 #### example response (success)
@@ -72,6 +77,11 @@ Easys3.put(bucket_name, file_name, file, acl)
 ### Getting a file from s3
 ```ruby
 Easys3.get(bucket_name, file_name)
+```
+
+#### example
+```ruby
+Easys3.put("test-bucket", "test/abc.log") # acl is optional
 ```
 
 #### example response (success)
