@@ -9,3 +9,13 @@
 
 # rspec failure tracking
 .rspec_status
+
+# ignore .env
+bin/.env
+.env
+
+# ignore bundle
+vendor/bundle
+
+# ignore other unnecessary files
+Gemfile.lock
