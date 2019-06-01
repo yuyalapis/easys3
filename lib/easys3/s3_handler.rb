@@ -1,6 +1,6 @@
 require "dotenv"
 Dotenv.overload()
-require "aws-sdk"
+require "aws-sdk-s3"
 
 module S3Handler
   def self.get_s3_resorce(ignore_keys=false)
