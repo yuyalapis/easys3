@@ -61,7 +61,7 @@ Easys3.put(bucket_name, file_name, file, acl) # acl is optional
 
 #### example
 ```ruby
-Easys3.put("test-bucket", "test/abc.log", "abbc") # acl is optional
+Easys3.put("test-bucket", "test/abc.log", "abc")
 ```
 
 #### example response (success)
@@ -81,7 +81,7 @@ Easys3.get(bucket_name, file_name)
 
 #### example
 ```ruby
-Easys3.put("test-bucket", "test/abc.log") # acl is optional
+Easys3.get("test-bucket", "test/abc.log")
 ```
 
 #### example response (success)
